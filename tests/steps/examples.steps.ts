@@ -15,18 +15,6 @@ import {expect} from "@playwright/test"
     await page.locator('[id=login-button]').click();
   });
 
-  Then('she is logged in on the {string}', async function (pageType) {
-    if(pageType === "product page"){
-      verifyProductPage();
-    }
-  });
-
-  async function verifyProductPage() {
-    let itemTitelElement = page.locator('[id=item_2_title_link]');
-    await expect (itemTitelElement).toHaveValue('Sauce Labs Onesie');
-    //await expect (page.locator('.inventory_item'))
-    let result = await page.$$('.inventory_item');
-    let inventoryItems = await page.locator('.inventory_item');
-    await expect (await inventoryItems.count() === 6);
+  Then('she is logged in on the product page', async function () {
     await expect (page.locator('[id=add-to-cart-sauce-labs-onesie]')).toBeVisible();
-  };
+  });
