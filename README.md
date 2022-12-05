@@ -1,31 +1,27 @@
- Created a Playwright Test project for your project to test in a desired directory
+ This Cucumber Playwright project is a playground for all who want to explore Acceptance Test with Cucumber (for BDD) and Playwright (for Test Automation).
 
-Inside that directory, you can run several commands:
+ Pre-requisits: 
+ Have an actual version of Node.js installed. 
 
-  npx playwright test
-    Runs the end-to-end tests.
+ Inside that directory, you can run several commands:
+ Open the terminal e.g. in Visaul Studio Code (Tab Terminal -> New) 
 
-  npx playwright test --project=chromium
-    Runs the tests only on Desktop Chrome.
+ You can run tests with:
+ npm test
 
-  npx playwright test example
-    Runs the tests in a specific file.
+ Try it out - you have an example test already living inside this project.
 
-  npx playwright test --debug
-    Runs the tests in debug mode.
+What are you testing?
+ The demo side, this project is testing, is a free online website: www.saucelab.com - this is built for testing purposes and not the best piece of code, BUT it is free and available and you can use it to learn and explore basic functions. 
 
-  npx playwright codegen
-    Auto generate tests with Codegen.
+ How?
+ First, create you own git branch to not whistle-blow the possible automation and testing solutions. 
 
-We suggest that you begin by typing:
+ Second, checkout your branch and start to write a first scenario. You do this in the test/features folder. You can add the test in the existing example.feature
 
-    npx playwright test
+ If you have written a proper test, following BDD rules, run the tests (npm test). In the terminal you will see, that there are new steps that have not been defined, yet. So, copy the suggestion and paste it into the examples.steps.ts file in the test/steps folder. 
 
-And check out the following files:
-  - .\tests\example.spec.ts - Example end-to-end test
-  - .\tests-examples\demo-todo-app.spec.ts - Demo Todo App end-to-end tests
-  - .\playwright.config.ts - Playwright Test configuration
+ Now you can try to write the typescript code to get the test run. Start with the first step and its implementation and only if it works, move to the next one. 
 
-Visit https://playwright.dev/docs/intro for more information. ✨
-
-Happy hacking! 🎭
+ 
+Happy testing! 🎭
