@@ -9,7 +9,7 @@ setDefaultTimeout(50000);
 
 BeforeAll(async () => {
     try {
-        global.browser = await chromium.launch({headless: false, slowMo: 50});
+        global.browser = await chromium.launch({headless: false, slowMo: 200});
     }
     catch (error) {
         console.log(`chrome navigation to demo site failed due to ${error}`);
@@ -21,7 +21,7 @@ Before(async () => {
     try {
         context = await global.browser.newContext();
         page = await context.newPage();
-        await page.goto("https://www.saucedemo.com/")
+        await page.goto("https://hornbach-antragsportal.ims-loyalty.de/de/home")
         console.log(`captured site title as ${await page.title()}`);
     }
     catch (error) {
