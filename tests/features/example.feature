@@ -4,6 +4,12 @@ Feature Description : Run first tests
 
 
 Scenario: Make a first test
-Given the user is on the demo website
-When she enters her account information
-Then she is logged in on the product page
+    Given I am on Hornbach site
+    When I click Main Card link
+    Then I see Main Card Profi Card form
+
+Scenario: Completion of the Hauptkartenantrag form
+    Given I am on Hornbach site
+    When I click Main Card link
+    When Fill the Hauptkartenantrag form
+    Then I go go the next part of the form - Hauptkarteninhaber
