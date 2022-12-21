@@ -3,13 +3,19 @@ Feature: First Feature
 Feature Description : Run first tests
 
 
-Scenario: Make a first test
-    Given I am on Hornbach site
-    When I click Main Card link
-    Then I see Main Card Profi Card form
+  Scenario: User changes a language of the application to German
+    Given Opens an application
+    When Changes language of the application
+    Then Language of the form is in German
 
-Scenario: Completion of the Hauptkartenantrag form
-    Given I am on Hornbach site
-    When I click Main Card link
-    When Fill the Hauptkartenantrag form
-    Then I go go the next part of the form - Hauptkarteninhaber
+  Scenario: Check if error message appears
+    Given User is on the view of the applications
+    When User opens an existing application
+    When Removes data from "Company Name" input
+    Then Error message on the form is visible
+
+#  Scenario: Check if error message appears
+#    Given User is on the view of the applications
+#    When User opens an existing application
+#    When Removes data from "Company Name" input
+#    Then Error message on the form is visible

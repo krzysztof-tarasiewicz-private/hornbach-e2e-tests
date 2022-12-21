@@ -21,7 +21,7 @@ Before(async () => {
     try {
         context = await global.browser.newContext();
         page = await context.newPage();
-        await page.goto("https://hornbach-antragsportal.ims-loyalty.de/de/home")
+        await page.goto("https://frontend.hornbach-develop.loyaltyharbor.dev")
         console.log(`captured site title as ${await page.title()}`);
     }
     catch (error) {
