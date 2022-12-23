@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="1.4776990000009538">
-<testsuite name="develop/example.spec.ts" timestamp="1669027724235" hostname="" tests="1" failures="0" skipped="0" time="0.886" errors="0">
-<testcase name="homepage has title and links to intro page" classname="[chromium] › develop/example.spec.ts › homepage has title and links to intro page" time="0.886">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="5.065971000000834">
+<testsuite name="develop/example.spec.ts" timestamp="1671619854888" hostname="" tests="1" failures="0" skipped="0" time="3.161" errors="0">
+<testcase name="homepage has title and links to intro page" classname="[chromium] › develop/example.spec.ts › homepage has title and links to intro page" time="3.161">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/develop-example-homepage-has-title-and-links-to-intro-page-chromium/video.webm]]
