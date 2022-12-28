@@ -30,12 +30,6 @@ Before(async () => {
         throw new Error(`chrome navigation to demo site failed due to ${error}`);
     }
 
-    // // Given step
-    // await expect(page.locator("h3 > a")).toHaveText("List of applications");
-    // await page.click("h3 > a");
-    // // When step
-    // await page.click("//a[contains(@href, '100000001')]");
-
     return page;
     
 });
